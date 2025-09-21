@@ -2,15 +2,16 @@ package CoreJava.FinalKeywordAffectClassInheritanceAndMethodOverriding;
 
 /**
  * 🔹 Concept Explanation
- *
+ * <p>
  * In Java, the final keyword has 3 main uses:
- *
+ * <p>
  * Final variables → constants (cannot be reassigned).
- *
+ * <p>
  * Final methods → cannot be overridden.
- *
+ * <p>
  * Final classes → cannot be extended (no subclassing).
- * */
+ *
+ */
 
 class Parent {
     final void show() {
