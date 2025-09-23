@@ -71,5 +71,14 @@ public class RegexExample {
         while (matcher.find()) {
             System.out.println("Match: " + matcher.group());
         }
+
+        String regex1 = "\\d+"; // Pattern to match one or more digits
+        String input1 = "12345";
+
+        Pattern pattern1 = Pattern.compile(regex1);
+        Matcher matcher1 = pattern1.matcher(input1);
+
+        boolean result = matcher1.matches();
+        System.out.println("matches(): " + result); // Output: true
     }
 }
