@@ -25,6 +25,25 @@ import java.util.regex.Pattern;
  * </ul>
  */
 public class RegexExample {
+    /**
+     * Demonstrates a basic example of using Java's regular expression API
+     * to find a whole word in a string.
+     * <p>
+     * The example breaks down the three core steps:
+     * <ul>
+     * <li><strong>Pattern Compilation:</strong> Compiles a regular expression into a {@link java.util.regex.Pattern} object.
+     * For instance, {@code Pattern.compile("\\bcat\\b")} creates a pattern to find the word "cat". The {@code \b}
+     * is a word boundary, ensuring "cat" is matched as a complete word and not part of a larger word like "caterpillar".</li>
+     *
+     * <li><strong>Matcher Creation:</strong> Creates a {@link java.util.regex.Matcher} object from the compiled pattern.
+     * This object is the engine used to perform match operations against a specific input string,
+     * such as {@code pattern.matcher(input)}.</li>
+     *
+     * <li><strong>Finding Matches:</strong> Iterates through the input string to find all occurrences of the pattern
+     * using the {@link java.util.regex.Matcher#find()} method. The loop {@code while (matcher.find())}
+     * searches for and prints every match.</li>
+     * </ul>
+     */
     public static void main(String[] args) {
         // Define a regular expression pattern
         String regex = "\\bcat\\b";
