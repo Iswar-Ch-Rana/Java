@@ -14,7 +14,7 @@ class FileRecord implements Deletable {
 
     @Override
     public String toString() {
-        return STR."FileRecord(\{file})";
+        return "FileRecord(" + file + ")";
     }
 }
 
@@ -28,7 +28,7 @@ class User {
 
     @Override
     public String toString() {
-        return STR."User(\{name})";
+        return "User(" + name + ")";
     }
 }
 
@@ -36,9 +36,9 @@ class User {
 class DeletionService {
     public static void delete(Object obj) {
         if (obj instanceof Deletable) {
-            System.out.println(STR."Deleted: \{obj}");
+            System.out.println("Deleted: " + obj);
         } else {
-            System.out.println(STR."Rejected: \{obj} cannot be deleted");
+            System.out.println("Rejected: " + obj + " cannot be deleted");
         }
     }
 }
